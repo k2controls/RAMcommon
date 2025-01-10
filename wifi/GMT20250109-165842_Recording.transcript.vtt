@@ -1,0 +1,146 @@
+WEBVTT
+
+1
+00:00:01.740 --> 00:00:30.879
+Keith Kelly: Hey? Hello! This is a video on how to connect to Wi-fi on your pi Rover. I'm going to go through several different options. 1st of all, we'll take a look at Nmc. Psk, so that's the Wi-fi access point that's provided by Nmc. Trying to get that around campus. But at this point. I think it's limited to the parsons, stool and building. I'd like to see it in the Innovation Center. I'll keep on working on that. But that is the Wi-fi access point provided just by 4 Nmc. Just for this class.
+
+2
+00:00:31.258 --> 00:00:45.260
+Keith Kelly: The the student Wi-fi will not work with your Pi Rover, due to the authentication methodologies that Nmc uses for those for those Wi-fi access points. So we'll go through. Take a look at that. Psk.
+
+3
+00:00:46.043 --> 00:00:59.810
+Keith Kelly: access point 1st of all, another option is using Nmc guests. So I'll go through that. It really takes another step in terms of opening up a browser and accepting the Nmc guest policies. So I'll demonstrate that
+
+4
+00:00:59.810 --> 00:01:24.780
+Keith Kelly: I'm also in the maker space. So demonstrate how to use the makers. Wi-fi. Of course, that's only available in the maker space, and the strength of that Wi-fi is somewhat limited. Students have been having some connection issues. So that's probably not the best scenario. And then, finally, I'll show connecting to my phone hotspot on my phone. That's always a nice option, because it works anywhere.
+
+5
+00:01:24.780 --> 00:01:40.929
+Keith Kelly: And of course, you know, data usage is is an issue. But most of the stuff that we do over the Wi-fi connection on your rover using the remote connection is pretty low data. So it doesn't impact your data plan much as far as using your smartphone.
+
+6
+00:01:40.930 --> 00:02:03.239
+Keith Kelly: So 1st of all, you can see, I've got the the remote desktop open. You can see this icon over here. The double arrows indicate that there is not a current Wi-fi connection. You can see there is an IP address. That's being shown when I hover over that. That is because I'm connected with the Ethernet cable. So that is that local connection, pi rover local
+
+7
+00:02:03.516 --> 00:02:17.059
+Keith Kelly: so there's a 1, 69, 2, 5, 4, 10, dot, 2, 3, 8. Again, that's just an IP address that's connected between my workstation and the Rover. That doesn't give me Internet access. So the 1st thing I'll do is click on here. We should see the
+
+8
+00:02:17.739 --> 00:02:28.040
+Keith Kelly: available connections. And you can see right there. Nmc, psk, so again, that should be the kind of the preferred access
+
+9
+00:02:28.530 --> 00:02:43.170
+Keith Kelly: to use. Now, it looks like I've used that before, and so it automatically connected to that. I did not have to provide the the the pass code for that. But if you take a look at the, and I don't think this is gonna show up
+
+10
+00:02:43.555 --> 00:03:02.459
+Keith Kelly: because I'm just sharing the Rover window. But if you take a look at the creating a remote connection document. You can see that the Psk password is baffle. Dash, amused, dash stencil 4. Let me copy that into a little notepad thing here, so you will see that.
+
+11
+00:03:19.440 --> 00:03:24.904
+Keith Kelly: So there you can see the password for that. Nmc psk,
+
+12
+00:03:26.074 --> 00:03:34.000
+Keith Kelly: Wi-fi access point. And again, that's in the parsons doing building hopefully to get it around campus like North Hall and Innovation Center as well.
+
+13
+00:03:34.589 --> 00:03:42.379
+Keith Kelly: Okay. So the next option, then, is to use the guest account. So let me disconnect from the Psk.
+
+14
+00:03:54.240 --> 00:04:02.789
+Keith Kelly: so come over here and I'm going to select Nmc. Guest so go to no more networks. There's Nmc. Guest right there.
+
+15
+00:04:03.080 --> 00:04:31.269
+Keith Kelly: Now again, when you use the Nmc. Guest. 1st of all, they do limit the bandwidth on there. But that shouldn't be a huge issue for you, because again, we don't use a move. A lot of large files across these, you know, the Pi Rover Wi-fi connections. But the thing there is you're not going to be able to get a network connection again. We demonstrated this in class, but the way to look for a connection is to ping use the Ping command. So I'm going to ping 8.8 dot 8.8
+
+16
+00:04:31.545 --> 00:04:55.239
+Keith Kelly: if I hit enter you can see that that currently does not work. And so again, even though you've connected to the guest account. And it kind of shows you that Wi-fi icon up there, and it gives you an IP address. It looks like I've got a 10 dot 80 dot, 1 94, 1 85. I don't have access to the Internet. So again, the thing you need to use for the do for the guest account is open up the browser window
+
+17
+00:05:03.630 --> 00:05:06.980
+Keith Kelly: and just go to nmc.edu
+
+18
+00:05:09.230 --> 00:05:17.649
+Keith Kelly: so again, even though you don't have Wi-fi connection, you should be able to connect to nmc.edu, and it should load that guest page up for me.
+
+19
+00:05:18.500 --> 00:05:31.090
+Keith Kelly: and so notice it's coming up with this terms of agreement. So if you come down here and say, Yep, I agree. And again, you'll have to do this every time. I agree.
+
+20
+00:05:31.310 --> 00:05:39.279
+Keith Kelly: And then, now we've got a valid connection. So I can go out here and again go to Google.
+
+21
+00:05:53.160 --> 00:05:59.119
+Keith Kelly: And so they're Google loaded. And again, kind of our preferred method is to come over here to our terminal window
+
+22
+00:05:59.370 --> 00:06:19.280
+Keith Kelly: and again use that Ping command. We're going to ping Google's name service. Ping, space 8.8 point 8. And now you can see you get a response right? So super fast but it what does work? And so it will give you you know, access, basically, at any place. On Nmc's site.
+
+23
+00:06:19.825 --> 00:06:22.590
+Keith Kelly: So let's go ahead and disconnect that then.
+
+24
+00:06:23.930 --> 00:06:41.640
+Keith Kelly: and take a look at another one. So there's also. So this makers. Yeah, we want to disconnect from that the makers. If I go to here the makers tech that. That is a password protected site that's for the 3D printers and other resources here in the maker space.
+
+25
+00:06:41.640 --> 00:06:57.009
+Keith Kelly: so you can't use that one. But if you come down to more networks there is a makers, one and a makers. 5G. Those are open networks. Let's go ahead and try that one just to see if that one works again. The the
+
+26
+00:06:58.490 --> 00:06:59.790
+Keith Kelly: the
+
+27
+00:07:01.270 --> 00:07:26.080
+Keith Kelly: the I guess the connection on this is somewhat marginal. We had somewhat somewhat luck with this last semester, but there were some issues. But you can try it if you're in the makerspace. Let me go and again bring up that window again. Notice the icon, so I am connected to Wi-fi, and if I come up here and do my Ping command again. You can see. Yeah, I've got. I've got an Internet connection there as well.
+
+28
+00:07:26.320 --> 00:07:30.958
+Keith Kelly: So that's yet another option. If you're in the maker space again, the the
+
+29
+00:07:31.630 --> 00:07:39.859
+Keith Kelly: the power of that Wi-fi access points not great. So you kind of have to be in the main makers area for that to that that to be able to work
+
+30
+00:07:40.381 --> 00:07:58.749
+Keith Kelly: the last option is to use your phone hotspot. So I've got my hotspot turned on my phone is affectionately named Kiki so if I go to Kiki connection and again, you can see that that's gonna go ahead and connect, I believe, because I think I've already passed. Put the pass code in there.
+
+31
+00:07:59.514 --> 00:08:09.719
+Keith Kelly: Yeah, so again, normally, you'd have to go into your phone app find out what your pass code is for your Wi-fi hotspot on your phone
+
+32
+00:08:10.300 --> 00:08:15.999
+Keith Kelly: and then you can connect, using your phone Wi-fi access point as well. Your hotspot
+
+33
+00:08:16.433 --> 00:08:44.006
+Keith Kelly: the advantage to that is, usually, when you take a look at your your application on your phone for your hotspot, you can actually see what the IP address is of the Rover. So again, if you can't connect to something like Pi Rover using the host name you can always use that IP address, that your phone is telling you and connect directly by typing. That IP address right into the
+
+34
+00:08:44.570 --> 00:08:47.960
+Keith Kelly: tiger. Vnc application that we're using this semester.
+
+35
+00:08:48.240 --> 00:09:09.189
+Keith Kelly: So again, that should show several different options. Psk, should be your 1st option. If you're on Mc's campus the guest Wi-fi is also an option. Again, if you're in the maker space, the maker open, Wi-fi is available as well. Your phone works. And of course, if you're at your home, and you've got your own Wi-fi. You just need to know what your passcode is, and you connect to your home Wi-fi as well.
+
+36
+00:09:09.190 --> 00:09:20.330
+Keith Kelly: Alright, so that should get you a Wi-fi connection. Again, use that ping space 8.8. That's always the best way to check and make sure that you're out on the Internet and able to access resources. Thank you.
+
