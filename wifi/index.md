@@ -5,13 +5,17 @@ layout: default
 ### Summary:
 This tutorial covers how to connect your Raspberry Pi to various Wi-Fi access points. The tutorial will guide you through setting up a connection using the NMC_PSK access point, the NMC Guest access point, the Makerspace access point, and your personal phone hotspot.
 
-To test your Internet connectivity on the Raspberry Pi, open a terminal window and enter the following command. This requests a response from the Google name server at IP address 8.8.8.8. You should receive continuous replies showing the response times.
+To test your Internet connectivity on the Raspberry Pi, open a terminal window and enter the following command. This requests a response from the Google name server at IP address 8.8.8.8. You should receive continuous replies showing the response times. See the image below. Use Ctrl+C to stop pinging.
 
 ```console
 ping 8.8.8.8
 ```
+![terminal window showing ping response](ping.png)
 
-https://youtu.be/7xUBc1Skaxg
+### Resources
+- A video demonstrating connection to the Wi-Fi Access Points listed below is at the following link.
+
+[https://youtu.be/7xUBc1Skaxg](https://youtu.be/7xUBc1Skaxg){:target='_blank'}
 
 ### 1. **NMC_PSK Access Point**:
 
